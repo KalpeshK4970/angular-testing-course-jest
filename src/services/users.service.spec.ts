@@ -34,6 +34,7 @@ describe("User Service" , () => {
             }
             userService.addUser(user)
             expect(userService.users).toEqual([{id:'2',name: 'foo'}])
+            // expect(userService.users$.getValue()).toEqual([{id:'2',name: 'foo'}])
         })
     })
 

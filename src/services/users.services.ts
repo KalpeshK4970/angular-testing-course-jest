@@ -7,9 +7,11 @@ import { UtilsService } from "./utils.service";
 export class UserService{
     utilsService = inject(UtilsService)
     users: UserInterface[] = [];
+    // users$ = new BehaviourSubject<UserInterface[]> ([])
 
     addUser(user: UserInterface): void {
         this.users = [...this.users,user];
+        // this.users$.next([...this.users$.getValue(),user])
     }
 
     removeUser(userId: string):void {
