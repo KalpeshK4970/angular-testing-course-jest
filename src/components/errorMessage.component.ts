@@ -2,7 +2,7 @@ import { Component, Input } from "@angular/core";
 
 @Component({
     selector: 'mc-error-message',
-    template: '<div data-testid="message-container"> {{message}} </div>',
+    template: `<div data-testid="message-container">{{message}}</div>`,
     standalone: true
 })
 

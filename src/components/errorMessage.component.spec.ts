@@ -25,17 +25,17 @@ describe('ErrorMessageComponent' , () => {
             By.css('[data-testid="message-container"]')
         )
 
-        expect(messageContainer.nativeElement.textContent).toEqual(' Something went wrong ')
+        expect(messageContainer.nativeElement.textContent).toEqual('Something went wrong')
     })
 
     it('renders custom error message', () => {
-        component.message = 'Email is already taken'
+        component.message = "Email is already taken"
         fixture.detectChanges();
 
         const messageContainer = fixture.debugElement.query(
             By.css('[data-testid="message-container"]')
         )
-
-        expect(messageContainer.nativeElement.textContent).toEqual('Email is already taken')
+ 
+        expect(messageContainer.nativeElement.textContent).toEqual("Email is already taken")
     })
 })
