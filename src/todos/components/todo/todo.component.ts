@@ -72,7 +72,7 @@ export class TodoComponent implements OnInit, OnChanges {
     if (changes['isEditing'].currentValue) {
       setTimeout(() => {
         this.textInput?.nativeElement.focus();
-      }, 0);
+      }, 1000);
     }
   }
 
